@@ -6,26 +6,43 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="stylesheet" href="css/normalize.css" />
 		<link rel="stylesheet" href="css/style.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+			rel="stylesheet"
+		/>
 		<title>Adri Devnull | Software Developer</title>
 	</head>
 	<body>
 		<header>
-			<nav>
-				<h2>
-					<span>Logo</span>
-					<a href="#">AdriDevnull</a>
-				</h2>
-				<ul>
-					<li>
+			<nav id="nav" class="nav">
+				<div class="logo__container">
+					<img
+						src="assets/images/logo.png"
+						class="logo-image"
+						alt="logo adridevnull"
+					/>
+				</div>
+				<label for="menu_burguer" class="label-burguer">
+					<img
+						src="./assets/images/menu-burguer.svg"
+						class="label-image"
+						alt="menu burguer icon"
+					/>
+				</label>
+				<input type="checkbox" id="menu_burguer" class="input_burguer" />
+				<ul class="nav__list">
+					<li class="nav__list__item">
 						<a href="#">Projects</a>
 					</li>
-					<li>
+					<li class="nav__list__item">
 						<a href="#">About me</a>
 					</li>
-					<li>
+					<li class="nav__list__item">
 						<a href="#">Stack</a>
 					</li>
-					<li>
+					<li class="nav__list__item">
 						<a href="#">Contact</a>
 					</li>
 				</ul>
@@ -33,45 +50,73 @@
 		</header>
 		<main>
 			<!-- HOME SECTION  -->
-			<section>
-				<article>
-					<h1>Software Developer</h1>
-					<h2>Adri Bermejo</h2>
-					<p>
-						Full-stack developer, specializing in front-end development using
-						React.
+			<section class="home container">
+				<article class="home__content">
+					<h1 class="home__title">Adrián Bermejo</h1>
+					<h2 class="home__subtitle">Software Developer</h2>
+					<p class="home__text">
+						Full-stack developer, specializing in
+						<span class="home__text-span">front-end</span>
+						development using React.
 					</p>
-					<div>
-						<span>Linkedin</span>
-						<span>Github</span>
-						<span>Cv</span>
+					<div class="home__social">
+						<a href="#">
+							<img
+								src="assets/images/linkedin.svg"
+								class="home__social-icon"
+								alt="linkedin icon"
+							/>
+						</a>
+						<a href="#">
+							<img
+								src="assets/images/github.svg"
+								class="home__social-icon"
+								alt="github icon"
+							/>
+						</a>
+						<a href="#">
+							<img
+								src="assets/images/cv.svg"
+								class="home__social-icon"
+								alt="cv icon "
+							/>
+						</a>
 					</div>
 				</article>
 			</section>
 			<!-- PROJECTS SECTION  -->
-			<section>
-				<h2>Projects</h2>
-				<div>
-					<article>
-						<div>
-							<h2>Front-End</h2>
-							<h1>Name of project</h1>
-							<p>
-								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum
-								cumque quaerat, corporis cupiditate temporibus officia iure amet
-								voluptates nulla deleniti necessitatibus quidem soluta.
-								Recusandae, ducimus perspiciatis. Neque reiciendis cupiditate
-								facere!
-							</p>
-							<div>
-								<a href="#">Link</a>
-								<a href="#">Git Code</a>
-							</div>
-							<div>
-								<span>HTML</span>
-								<span>CSS</span>
-								<span>Javascript</span>
-							</div>
+			<section class="projects container">
+				<h2 class="projects-title">Projects</h2>
+				<div class="projects__content">
+					<article class="project__container">
+						<img
+							src="assets/images/test-bg.jpg"
+							class="project__image"
+							alt=""
+						/>
+						<h1 class="project__name">Paddle Connect</h1>
+						<p class="project__info">
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum
+							cumque quaerat, corporis cupiditate temporibus officia iure amet
+							voluptates nulla deleniti necessitatibus quidem soluta.
+							Recusandae, ducimus perspiciatis. Neque reiciendis cupiditate
+							facere!
+						</p>
+						<div class="project__links">
+							<a href="#" class="project-link">
+								<img src="assets/images/link-image.svg" alt="" /> Link
+								project</a
+							>
+							<a href="#" class="project-link">
+								<img src="assets/images/github.svg" alt="" /> Github
+							</a>
+						</div>
+						<div class="project__technologies">
+							<span class="project-technologie">HTML</span>
+							<span class="project-technologie">CSS</span>
+							<span class="project-technologie">React</span>
+							<span class="project-technologie">Node.js</span>
+							<span class="project-technologie">MongoDB</span>
 						</div>
 					</article>
 					<article>
