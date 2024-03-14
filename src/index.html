@@ -15,6 +15,7 @@
 		<title>Adri Devnull | Software Developer</title>
 	</head>
 	<body>
+		<!-- HEADER  -->
 		<header>
 			<nav id="nav" class="nav">
 				<div class="logo__container">
@@ -34,16 +35,20 @@
 				<input type="checkbox" id="menu_burguer" class="input_burguer" />
 				<ul class="nav__list">
 					<li class="nav__list__item">
-						<a href="#">Projects</a>
+						<span class="nav__list-number">01.</span>
+						<a class="nav__list-link" href="#">Projects</a>
 					</li>
 					<li class="nav__list__item">
-						<a href="#">About me</a>
+						<span class="nav__list-number">02.</span>
+						<a class="nav__list-link" href="#">About me</a>
 					</li>
 					<li class="nav__list__item">
-						<a href="#">Stack</a>
+						<span class="nav__list-number">03.</span>
+						<a class="nav__list-link" href="#">Stack</a>
 					</li>
 					<li class="nav__list__item">
-						<a href="#">Contact</a>
+						<span class="nav__list-number">04.</span>
+						<a class="nav__list-link" href="#">Contact</a>
 					</li>
 				</ul>
 			</nav>
@@ -52,13 +57,43 @@
 			<!-- HOME SECTION  -->
 			<section class="home container">
 				<article class="home__content">
-					<h1 class="home__title">Adrián Bermejo</h1>
-					<h2 class="home__subtitle">Software Developer</h2>
+					<h1 class="home__greeting">Hi, my name is</h1>
+					<h2 class="home__title">Adrián Bermejo.</h2>
+					<h2 class="home__subtitle">You need to build something?</h2>
 					<p class="home__text">
-						Full-stack developer, specializing in
-						<span class="home__text-span">front-end</span>
-						development using React.
+						I'm a <span class="home__text-span">full-stack</span> developer
+						specialized in
+						<span class="home__text-span">frontend development</span>, with a
+						primary focus on utilizing
+						<span class="home__text-span">React</span> for building apps and
+						websites.
 					</p>
+					<div class="home__skills-container">
+						<span class="home-skills">
+							<img
+								class="home__skills-image"
+								src="assets/images/js.svg"
+								alt=""
+							/>
+							Jscript
+						</span>
+						<span class="home-skills">
+							<img
+								class="home__skills-image"
+								src="assets/images/react.svg"
+								alt=""
+							/>
+							React
+						</span>
+						<span class="home-skills">
+							<img
+								class="home__skills-image"
+								src="assets/images/node.svg"
+								alt=""
+							/>
+							Node.js
+						</span>
+					</div>
 					<div class="home__social">
 						<a href="#">
 							<img
@@ -94,7 +129,7 @@
 							class="project__image"
 							alt=""
 						/>
-						<h1 class="project__name">Paddle Connect</h1>
+						<h2 class="project__name">Paddle Connect</h2>
 						<p class="project__info">
 							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum
 							cumque quaerat, corporis cupiditate temporibus officia iure amet
@@ -104,8 +139,8 @@
 						</p>
 						<div class="project__links">
 							<a href="#" class="project-link">
-								<img src="assets/images/link-image.svg" alt="" /> Link
-								project</a
+								<img src="assets/images/link-image.svg" alt="" /> Project
+								link</a
 							>
 							<a href="#" class="project-link">
 								<img src="assets/images/github.svg" alt="" /> Github
@@ -119,79 +154,167 @@
 							<span class="project-technologie">MongoDB</span>
 						</div>
 					</article>
-					<article>
-						<div>
-							<h2>Fullstack</h2>
-							<h1>Name of project</h1>
-							<p>
-								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum
-								cumque quaerat, corporis cupiditate temporibus officia iure amet
-								voluptates nulla deleniti necessitatibus quidem soluta.
-								Recusandae, ducimus perspiciatis. Neque reiciendis cupiditate
-								facere!
-							</p>
-							<div>
-								<a href="#">Link</a>
-								<a href="#">Git Code</a>
-							</div>
-							<div>
-								<span>React</span>
-								<span>Node.js</span>
-								<span>MongoDB</span>
-							</div>
+					<article class="project__container">
+						<img
+							src="assets/images/test-bg.jpg"
+							class="project__image"
+							alt=""
+						/>
+						<h2 class="project__name">Paddle Connect</h2>
+						<p class="project__info">
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum
+							cumque quaerat, corporis cupiditate temporibus officia iure amet
+							voluptates nulla deleniti necessitatibus quidem soluta.
+							Recusandae, ducimus perspiciatis. Neque reiciendis cupiditate
+							facere!
+						</p>
+						<div class="project__links">
+							<a href="#" class="project-link">
+								<img src="assets/images/link-image.svg" alt="" /> Project
+								link</a
+							>
+							<a href="#" class="project-link">
+								<img src="assets/images/github.svg" alt="" /> Github
+							</a>
+						</div>
+						<div class="project__technologies">
+							<span class="project-technologie">HTML</span>
+							<span class="project-technologie">CSS</span>
+							<span class="project-technologie">React</span>
+							<span class="project-technologie">Node.js</span>
+							<span class="project-technologie">MongoDB</span>
 						</div>
 					</article>
 				</div>
 			</section>
 			<!-- ABOUT ME SECTION  -->
-			<section>
-				<article>
-					<h2>About me</h2>
-					<div>
-						<img src="" alt="adri bermejo image about me" />
-						<p>
-							Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-							Inventore nesciunt nihil magni voluptatibus quidem ex
-							necessitatibus modi? Modi consequatur, temporibus esse vel
-							mollitia excepturi cupiditate dignissimos quasi iusto ipsam
-							inventore.
-						</p>
-					</div>
+			<section class="about container">
+				<article class="about__content">
+					<h2 class="about-title">About me</h2>
+					<img
+						class="about__image"
+						src="assets/images/adri-profile.png"
+						alt="adri bermejo image about me"
+					/>
+					<p class="about__text">
+						I’m a
+						<span class="about__remarked-word">full-stack developer</span>
+						currently focused on the frontend. Primarily use
+						<span class="about__remarked-word">React</span> to develop solutions
+						that combine functionality and logic with a visually appealing and
+						user-friendly experience. Two essential things:
+						<span class="about__remarked-word">clean code</span> and
+						understanding the 'why' behind things..
+					</p>
 				</article>
 			</section>
 			<!-- STACK SECTION  -->
-			<section>
-				<h2>Stack Tecnologies</h2>
-				<ul>
-					<li>Html</li>
-					<li>Css</li>
-					<li>Javascript</li>
-					<li>React</li>
-					<li>Redux</li>
-					<li>Node.js</li>
-					<li>Express</li>
-					<li>MongoDB</li>
-					<li>Git</li>
-					<li>Npm</li>
-					<li>Figma</li>
-					<li>VSCode</li>
+			<section class="stack container">
+				<h2 class="stack-title">Stack Tecnologies</h2>
+				<ul class="stack__list">
+					<li class="stack__item html">
+						<img
+							src="assets/images/stack/html.svg"
+							class="stack__item-image"
+							alt=""
+						/>
+					</li>
+					<li class="stack__item css">
+						<img
+							src="assets/images/stack/css.svg"
+							class="stack__item-image"
+							alt=""
+						/>
+					</li>
+					<li class="stack__item js">
+						<img
+							src="assets/images/stack/javascript.svg"
+							class="stack__item-image"
+							alt=""
+						/>
+					</li>
+					<li class="stack__item react">
+						<img
+							src="assets/images/stack/react.svg"
+							class="stack__item-image"
+							alt=""
+						/>
+					</li>
+					<li class="stack__item redux">
+						<img
+							src="assets/images/stack/redux.svg"
+							class="stack__item-image"
+							alt=""
+						/>
+					</li>
+					<li class="stack__item node">
+						<img
+							src="assets/images/stack/nodejs.svg"
+							class="stack__item-image"
+							alt=""
+						/>
+					</li>
+					<li class="stack__item express">
+						<img
+							src="assets/images/stack/express.svg"
+							class="stack__item-image"
+							alt=""
+						/>
+					</li>
+					<li class="stack__item git">
+						<img
+							src="assets/images/stack/git.svg"
+							class="stack__item-image"
+							alt=""
+						/>
+					</li>
+					<li class="stack__item vscode">
+						<img
+							src="assets/images/stack/vscode.svg"
+							class="stack__item-image"
+							alt=""
+						/>
+					</li>
+					<li class="stack__item figma">
+						<img
+							src="assets/images/stack/figma.svg"
+							class="stack__item-image"
+							alt=""
+						/>
+					</li>
 				</ul>
 			</section>
 		</main>
 		<!-- FOOTER  -->
 		<footer>
-			<div>
-				<span>Gmail: adri.devnull@gmail.com</span>
-				<span>Developed by Adridevnull</span>
-			</div>
-			<ul>
-				<li>
-					<a href="#">Linkedin</a>
-				</li>
-				<li>
-					<a href="#">Github</a>
-				</li>
-			</ul>
+			<section class="footer container">
+				<div class="footer__content">
+					<a href="#" class="footer__contact"
+						><img src="assets/images/mail.svg" alt="" />Contact me</a
+					>
+					<span class="footer-developed">Developed by Adridevnull</span>
+				</div>
+				<ul class="footer__social">
+					<li>
+						<a href="#">
+							<img
+								src="assets/images/linkedin.svg"
+								class="home__social-icon"
+								alt="linkedin icon"
+							/>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<img
+								src="assets/images/github.svg"
+								class="home__social-icon"
+								alt="github icon"
+							/>
+						</a>
+					</li>
+				</ul>
+			</section>
 		</footer>
 
 		<script type="module" src="./js/index.js"></script>
