@@ -47,6 +47,12 @@ body {
   padding: 0 30px;
 }
 
+@media (min-width: 768px) {
+  .container {
+    padding: 0 100px;
+  }
+}
+
 header {
   height: 80px;
   margin-bottom: 110px;
@@ -123,6 +129,11 @@ header {
 
 /* HEADER STYLES DESKTOP  */
 @media (min-width: 768px) {
+
+  .nav {
+    padding: 0 80px;
+  }
+
   .label-burguer {
     display: none;
   }
@@ -133,6 +144,28 @@ header {
     height: auto;
     flex-direction: row;
     gap: 1rem;
+    background-color: transparent;
+  }
+
+  .nav__list-number {
+      font-size: .9em;
+      color: var(--subtittle-color);
+  }
+
+  .nav__list__item {
+    flex-direction: row;
+    gap: 10px;
+  }
+
+  .nav__list-link {
+    color: var(--text-color);
+    font-weight: 300;
+    font-size: 1em;
+  }
+  
+  .nav__list-link:hover {
+      color: var(--subtittle-color);
+      transition: color 0.2s
   }
 
 }
@@ -140,7 +173,7 @@ header {
 /* HOME STYLES */
 
 .home {
-  height: 100vh;
+  height: 85vh;
 }
 
 .home__greeting {
@@ -212,6 +245,57 @@ header {
   height: 40px;
 }
 
+/* HOME STYLES DESKTOP  */
+
+@media (min-width: 768px) {
+  .home {
+    margin: 0 auto;
+  }
+
+  .home__greeting {
+    padding-bottom: 30px;
+  }
+
+  .home__title {
+    font-size: 4em;
+  }
+
+  .home__subtitle {
+    font-size: 3.8em;
+    color: var(--subtittle-color);
+    margin-top: 0;
+    padding-top: 15px;
+  }
+
+  .home__text {
+    font-weight: 300;
+    width: 550px;
+  }
+
+  .home__skills-container {
+    display: flex;
+    justify-content: flex-start;
+    gap: 25px;
+    margin-bottom: 110px;
+  }
+
+  .home-skills {
+    font-weight: 400;
+  }
+  
+  .home__social-icon {
+    width: 45px;
+    height: 45px; 
+  }
+
+  .home__social-icon:hover {
+    filter: brightness(2);
+    box-shadow: 0 0 10px 3px rgba(255, 255, 255, 0.315); 
+    border-radius: 40%;
+    transition: all .1s;
+}
+}
+
 /* PROJECTS STYLES */
 
 .projects {
@@ -255,19 +339,22 @@ header {
 .project__links {
   display: flex;
   justify-content: space-between;
+  gap: 7px;
   margin-bottom: 25px;
 }
 
 .project-link {
   border: 2px solid var(--subtittle-color);
   background-color: var(--background-links);
-  padding: 7px;
+  width: 50%;
+  padding: 10px 10px;
+  justify-content: center;
   font-weight: 600;
   font-size: 1.05em;
   border-radius: 10px;
   display: flex;
   align-items: center;
-  gap: 7px;
+  gap: 5px;
 }
 
 .project__technologies {
@@ -284,6 +371,21 @@ header {
   border-radius: 10px;
   font-weight: 600;
   font-size: 1;
+}
+
+@media (min-width: 768px) {
+
+  .projects {
+    margin: 0 auto;
+  }
+
+  .project__container {
+  display: flex;
+  align-items: center;
+}
+.project__image-container {
+  width: 1200px;
+}
 }
 
 
