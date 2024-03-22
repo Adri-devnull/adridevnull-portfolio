@@ -480,10 +480,12 @@ header {
 }
 
 .about__image {
-  border-radius: 60px;
-  border: 1px solid rgba(189, 254, 255, .2);
-  box-shadow: 1px 1px 20px 1px rgba(189, 254, 255, .1);
   padding-top: 25px;
+  border-radius: 60px;
+  mask-image: linear-gradient(
+    black 50%,
+    transparent
+  );
 }
 
 .about__text {
