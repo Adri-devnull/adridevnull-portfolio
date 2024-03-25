@@ -78,7 +78,7 @@ header {
   content: "";
   position: absolute;
   top: 50%;
-  width: 90px;
+  width: 45px;
   height: 2px;
   background-color: #134e4a;
 }
@@ -407,10 +407,11 @@ header {
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
+  margin-bottom: 25px;
 }
 
 .project-technologie {
-  padding: 10px 20px;
+  padding: 10px 15px;
   border: 1px solid var(--border-technologies);
   background-color: var(--background-technologies);
   color: var(--text-technologies);
