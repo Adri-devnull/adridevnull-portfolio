@@ -2,6 +2,7 @@
   --background-color:#090c1a; 
   --subtittle-color : #92c2da;
   --titles-color: #e9e9e9;
+  --titles-project: #bbe1f4;
   --text-color: #dde2e8;
   --remark-text-color: #bdfeff;
   --background-links: rgb(119, 181, 212, .3);
@@ -127,6 +128,7 @@ header {
   top: 0;
   width: 100%;
   padding: 0 2em;
+  z-index: 9;
 }
 
 .nav__list {
@@ -441,15 +443,39 @@ header {
 
 .project__image-container {
   width: 1200px;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.project__image-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(2, 2, 15, 0.6);
+  transition: all .7s ease;
+  border-radius: 0px 20px 0px 0px;
+}
+
+.project__image-container:hover::before {
+  left: -100%;
+  opacity: 0;
 }
 
 .project__info-container {
   width: 1000px;
 }
 
+.project__name {
+    color: var(--titles-project);
+}
+
 .project__info {
   line-height: 1.7em;
-  font-size: 1em;
+  font-size: .9em;
 }
 
 .project-link {
